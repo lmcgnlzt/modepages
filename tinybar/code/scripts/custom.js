@@ -32,6 +32,53 @@ $(document).ready(function() {
         //}
     });
 
+    $('.designer_experience').slick({
+	  slidesToShow: 3,
+	  slidesToScroll: 1,
+	  autoplay: true,
+	  autoplaySpeed: 2500,
+	});
+
+    //HOMESCREEN
+	$(".show-gallery").swipebox();
+
+	//HOMESCREEN Preload Image
+    $(function() {
+        $("img.homescreen-preload-image").lazyload({
+            threshold : 100,
+            effect : "fadeIn",
+            // container: $("#page-content-scroll")
+        });
+    });
+
+
+    $('.folding-text').shorten({
+    	"showChars" : 180,
+	    "moreText"  : "更多",
+	    "lessText"  : "收起",
+	    "ellipsesText" : "。。。",
+    });
+
+
+
+    $('#load-more').click(function (){
+
+    	var history_container = $('#designer_history');
+    	var next_image = '\
+    	<div class="adaptive-item"><a href="images/pictures/3.jpg" class="swipebox" title="Caption Goes Here"><img class="responsive-image" src="images/pictures/3s.jpg" alt="img"></a></div>\
+		<div class="adaptive-item"><a href="images/pictures/4.jpg" class="swipebox" title="Caption Goes Here"><img class="responsive-image" src="images/pictures/4s.jpg" alt="img"></a></div>\
+		<div class="adaptive-item"><a href="images/pictures/5.jpg" class="swipebox" title="Caption Goes Here"><img class="responsive-image" src="images/pictures/5s.jpg" alt="img"></a></div>\
+    	';
+    	history_container.append(next_image);
+
+    	$(".swipebox").swipebox({
+			useCSS : true, // false will force the use of jQuery for animations
+			hideBarsDelay : 3000 // 0 to always show caption and action bar
+		});
+
+
+    });
+
 
   //   var template = "\
 		// <div id="designer" class="one-half-responsive">\
@@ -73,7 +120,7 @@ $(document).ready(function() {
 
 
 
-    var modeflip_api = "http://modeflip.com/designers";
+    var modeflip_api = "http://101.201.39.160/designers";
     $("#mode_homepage").ready(function(){
     	$.get(modeflip_api, function(data, status){
     		// HACK: striped position for designer list
