@@ -63,7 +63,7 @@ $(document).ready(function() {
 
     $('#load-more').click(function (){
 
-    	var history_container = $('#designer_history');
+    	var history_container = $('#history_pictures');
     	var next_image = '\
     	<div class="adaptive-item"><a href="images/pictures/3.jpg" class="swipebox" title="Caption Goes Here"><img class="responsive-image" src="images/pictures/3s.jpg" alt="img"></a></div>\
 		<div class="adaptive-item"><a href="images/pictures/4.jpg" class="swipebox" title="Caption Goes Here"><img class="responsive-image" src="images/pictures/4s.jpg" alt="img"></a></div>\
@@ -78,6 +78,42 @@ $(document).ready(function() {
 
 
     });
+
+
+
+
+    $('#myVideo_demo').videocontrols(
+        {
+            theme:
+            {
+                progressbar: 'blue',
+                range: 'pink',
+                volume: 'pink',
+            },
+            fillscreen: false,
+            mediumscreen: false,
+            seek: true,
+            time: false,
+        });
+
+    // $('video').videocontrols();
+
+
+
+ //    $.extend($.lazyLoadXT, {
+	//   edgeY:  10,
+	//   srcAttr: 'data-src',
+	//   forceLoad: false,
+	// });
+
+	// $("#mode_video").lazyLoadXT({
+	// 	show: true,
+	// 	forceLoad: true,
+	// });
+
+	// $(window).lazyLoadXT({
+	// 	forceLoad: true,
+	// });
 
 
   //   var template = "\

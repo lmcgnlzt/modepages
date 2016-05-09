@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>YouTube</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- <link href="../libs/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <!-- <script src="../libs/jquery/jquery.js"></script> -->
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <!-- <script src="../dist/jquery.lazyloadxt.extra.js"></script> -->
+    <!-- <script type="text/javascript" src="scripts/jquery.lazyloadxt.extra.js"></script> -->
+
+    <link href="styles/jquery.videocontrols.css"   rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="scripts/jquery.videocontrols.js"></script>
+
+
+</head>
+<body>
+    <div class="container">
+        <video id="myVideo_demo" width="100%" height="100%" controls="controls">
+            <source src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" type="video/mp4">
+            <!-- <source src="http://modeflip.com/gianni/profile/history/v/MaxMara_Spring_Summer_2011_MilanHD2.mp4" type="video/mp4"> -->
+        </video>
+
+        <script type="text/javascript">
+            $(document).ready(function ()
+            {
+                $('#myVideo_demo').videocontrols(
+                {
+                    // markers: [40, 84, 158, 194, 236, 272, 317, 344, 397, 447, 490, 580],
+                    markers: [40, 80, 120],
+                    preview:
+                    {
+                        sprites: ['images/pictures/5.jpg', 'images/pictures/1.jpg', 'images/pictures/3.jpg'],
+                        step: 10,
+                        width: 200
+                    },
+                    theme:
+                    {
+                        progressbar: 'blue',
+                        range: 'pink',
+                        volume: 'pink'
+                    }
+                });
+            });
+        </script>
+    </div>
+</body>
+</html>

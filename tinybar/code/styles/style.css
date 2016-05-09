@@ -632,6 +632,12 @@ body{
     transition:all 500ms ease;
 }
 
+.staff-item h2{
+    text-align:center;
+    margin-top:24px;
+    font-size:26px;
+}
+
 .staff-item h4{
 	text-align:center;
 	margin-top:22px;

@@ -30,11 +30,21 @@
 
 
 
+<!-- <link href="styles/jquery.lazyloadxt.fadein.css"   rel="stylesheet" type="text/css"> -->
+<link href="styles/jquery.videocontrols.css"   rel="stylesheet" type="text/css">
+
+
+
 <script type="text/javascript" src="scripts/jquery.js"></script>
 <script type="text/javascript" src="scripts/jqueryui.js"></script>
 <script type="text/javascript" src="scripts/framework.plugins.js"></script>
 <script type="text/javascript" src="scripts/plugins.js"></script>
 <script type="text/javascript" src="scripts/lib/mustache.js"></script>
+
+
+<!-- <script type="text/javascript" src="scripts/jquery.lazyloadxt.extra.js"></script> -->
+<script type="text/javascript" src="scripts/jquery.videocontrols.js"></script>
+
 
 <!-- <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script> -->
 <script type="text/javascript" src="scripts/slick.js"></script>
@@ -42,6 +52,7 @@
 
 <!-- <script type="text/javascript" src="http://viralpatel.net/blogs/demo/jquery/jquery.shorten.1.0.js"></script> -->
 <script type="text/javascript" src="scripts/jquery.shorten.min.js"></script>
+
 
 
 <script type="text/javascript" src="scripts/custom.js"></script>
@@ -178,7 +189,7 @@
 
             <div class="decoration"></div>
 
-            <div id="designer_history" class="portfolio-adaptive adaptive-three">
+            <div id="history_pictures" class="portfolio-adaptive adaptive-three">
                 <div class="adaptive-item">
                     <a href="http://modeflip.com/EDIE%20new%20york%20images.003.jpeg" class="swipebox" title="Caption Goes Here">
                         <img class="responsive-image" src="http://modeflip.com/edie_1s.jpg" alt="img">
@@ -213,67 +224,128 @@
             <div class="decoration"></div> -->
 
             <h5>Burberry 2016 春夏走秀视频</h5>
-            <div class="video-container">
-                <iframe class="videowrapper" src="https://www.youtube.com/embed/CWVdVuJZfN8"></iframe>
+
+            <!-- <div class="video-container">
+                <iframe type="audio/mpeg" class="responsive-video" src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" autostart="0"></iframe>
+            </div> -->
+
+            <div id="history_videos">
+                <!-- <video id="myVideo_demo" poster="http://modeflip.com/edie_1s.jpg" width="100%" height="100%" controls="controls" preload="none"> -->
+                <video id="myVideo_demo" poster="images/thumbnail.jpg" width="100%" height="100%" controls="controls" preload="none">
+                    <source src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" type="video/mp4">
+                    <!-- <source src="http://modeflip.com/gianni/profile/history/v/MaxMara_Spring_Summer_2011_MilanHD2.mp4" type="video/mp4"> -->
+                </video>
             </div>
+
+
+            <!-- <div class="video-container">
+                <video data-poster="images/pictures/5.jpg" controls>
+                    <source data-src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" type='video/mp4'>
+                </video>
+            </div> -->
+
+            <!-- <div class="video-container">
+                <video poster="images/pictures/5.jpg" controls>
+                    <source src="http://modeflip.com/gianni/profile/history/v/MaxMara_Spring_Summer_2011_MilanHD2.mp4" type='video/mp4'>
+                </video>
+            </div> -->
+
+            <!-- <iframe width="420" height="315" data-src="www.youtube.com/embed/uOzO9O15gwI?rel=0" frameborder="0" allowfullscreen></iframe> -->
+
             <div class="decoration"></div>
 
-            <h5>Burberry 2016 春夏走秀视频</h5>
+            <!-- <h5>Burberry 2016 春夏走秀视频</h5>
             <div class="video-container">
-                <iframe class="videowrapper" src="https://www.youtube.com/embed/zh7c30jSAgk"></iframe>
+                <iframe class="responsive-video" src="http://modeflip.com/gianni/profile/history/v/MaxMara_Autumn_Winter_2009_2010_Milan1.mp4" codecs="avc1.42E01E, mp4a.40.2"></iframe>
             </div>
-            <div class="decoration"></div>
+            <div class="decoration"></div> -->
+
 
 
 
 
             <div class="homepage-slider" data-snap-ignore="true">
                 <div>
-                    <!-- <div class="overlay"></div>
-                    <div class="homepage-slider-caption homepage-left-caption">
-                        <h3>TOP Designers</h3>
-                        <p>独家定制</p>
-                    </div> -->
                     <!-- <img src="images/pictures/3.jpg" class="responsive-image" alt="img"> -->
                     <img src="http://modeflip.com/gianni/profile/exclusive/1.jpg" class="responsive-image" alt="img">
                 </div>
                 <div>
-                    <!-- <div class="overlay"></div>
-                    <div class="homepage-slider-caption homepage-center-caption">
-                        <h3>优质面料</h3>
-                        <p>精致纯手工制作工艺</p>
-                    </div> -->
                     <!-- <img src="images/pictures/5.jpg" class="responsive-image" alt="img"> -->
                     <img src="http://modeflip.com/gianni/profile/exclusive/2.jpg" class="responsive-image" alt="img">
                 </div>
                 <div>
-                    <!-- <div class="overlay"></div>
-                    <div class="homepage-slider-caption homepage-right-caption">
-                        <h3>限量主题系列</h3>
-                        <p>来自美国、意大利、英国、法国</p>
-                    </div> -->
                     <img src="http://modeflip.com/gianni/profile/exclusive/3.jpg" class="responsive-image" alt="img">
                 </div>
             </div>
 
 
 
+
             <div class="staff-item">
-                <h4>SOPHIA TEZEL</h4>
-                <h5>精心独家定制限量主题系列</h5>
-                <h5>设计开发来自纽约</h5>
-                <h5>全球仅在MODE FLIP发售</h5>
+                <h4>精心独家定制限量主题系列</h4>
+                <h4>设计开发来自纽约</h4>
+                <h4>全球仅在MODE FLIP发售</h4>
                 <h4>限时·限量·平价</h4>
+                <br>
+                <br>
+                <br>
             </div>
 
 
+            <div class="one-half-responsive">
+                <img src="http://modeflip.com/gianni/profile/collections/new_arrival.png" alt="img" class="responsive-image">
+            </div>
 
-            <!-- <div class="adaptive-style">
-                <h4>SOPHIA TEZEL</h4>
-                <em class="subtitle">精心独家定制限量主题系列</em>
-                <em class="subtitle">设计开发来自纽约</em>
-                <em class="subtitle">全球仅在MODE FLIP发售</em>
+
+            <div class="staff-item">
+                <h2>七月限量主题春夏系列</h3>
+                <h4>07/2016 SPRING-SUMMER COLLECTIONS</h4>
+            </div>
+
+            <div class="decoration"></div>
+
+            <div class="homepage-slider" data-snap-ignore="true">
+                <div>
+                    <img src="http://modeflip.com/gianni/profile/collections/june/signature/1.jpg" class="responsive-image" alt="img">
+                </div>
+                <div>
+                    <img src="http://modeflip.com/gianni/profile/collections/june/signature/2.jpg" class="responsive-image" alt="img">
+                </div>
+            </div>
+
+            <!-- <div class="content-fullscreen full-bottom">
+                <div class="homescreen-slider-wrapper">
+                    <a class="homescreen-next-slide home-next" href="#"><i class="fa fa-angle-right"></i></a>
+                    <a class="homescreen-prev-slide home-prev" href="#"><i class="fa fa-angle-left"></i></a>
+                    <div class="single-item homepage-slider">
+                        <div>
+                            <img class="responsive-image" width="900" src="images/pictures/3.jpg" alt="img">
+                        </div>
+                        <div>
+                            <img class="responsive-image" width="900" src="images/pictures/1.jpg" alt="img">
+                        </div>
+                        <div>
+                            <img class="responsive-image" width="900" src="images/pictures/2.jpg" alt="img">
+                        </div>
+                    </div>
+                </div>
             </div> -->
+
+
+            <div class="container">
+                <div class="one-half-responsive last-column">
+
+                    <p class="left-if-mobile no-bottom folding-text">
+                        Soophia Tezel灵感来源于70年代复古时尚，在设计师的设计下，有了独特的时尚味道，
+                        复古的牛仔材质，精致的剪裁，打造经典70年代独特美式时尚。面料选择了优质的
+                        澳大利亚山羊毛，质感柔滑舒适。打造经典70年代独特美式时尚。面料选择了优质的
+                        澳大利亚山羊毛，质感柔滑舒适。打造经典70年代独特美式时尚。面料选择了优质的
+                        澳大利亚山羊毛，质感柔滑舒适。打造经典70年代独特美式时尚。面料选择了优质的
+                        澳大利亚山羊毛，质感柔滑舒适。
+                    </p>
+                </div>
+
+            </div>
 
 
 
