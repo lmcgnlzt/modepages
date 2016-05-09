@@ -307,7 +307,8 @@ body{
 }
 
 .main-logo{
-    background-image:url(../images/logo-dark.png);
+    /*background-image:url(../images/logo-dark.png);*/
+    background-image:url(../images/modeflip_logo.jpg);
     width:110px;
     height:18px;
     background-size:110px 18px;
@@ -617,7 +618,8 @@ body{
 /*////////////////////*/
 
 .staff-item img{
-	border-radius:300px;
+	/*border-radius:300px;*/
+    border-radius:0px!important;
 	max-width:150px;
 	margin-left:auto;
 	margin-right:auto;
@@ -630,10 +632,22 @@ body{
     transition:all 500ms ease;
 }
 
+.staff-item h2{
+    text-align:center;
+    margin-top:24px;
+    font-size:26px;
+}
+
 .staff-item h4{
 	text-align:center;
-	margin-top:20px;
-	font-size:16px;
+	margin-top:22px;
+	font-size:18px;
+}
+
+.staff-item h5{
+    text-align:center;
+    margin-top:20px;
+    font-size:16px;
 }
 
 .staff-item em{
@@ -856,42 +870,32 @@ body{
 
 
 
+/*--Activity Page--*/
 
+.activity-item .activity-item-icon{
+    width:60px;
+    height:60px;
+    border-radius:60px;
+    color:#FFFFFF;
+    line-height:60px;
+    text-align:center;
+    position:absolute;
+}
 
+.activity-item em{
+    padding-left:60px;
+    font-size:12px;
+    display:block;
+}
 
+.activity-item h5{
+    padding-top:2px;
+    padding-left:60px;
+    margin-bottom:0px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.activity-item p{
+    font-size:13px;
+}
 
 
