@@ -155,21 +155,21 @@ $(document).ready(function() {
 
 
 
+    // // comment out for now for dev
+    // var modeflip_api = "http://101.201.39.160/designers";
+    // $("#mode_homepage").ready(function(){
+    // 	$.get(modeflip_api, function(data, status){
+    // 		// HACK: striped position for designer list
+    // 		$.each(data, function(index){
+    // 			data[index].position = index % 2 == 0 ? 'thumb-left':'thumb-right';
+    // 		});
 
-    var modeflip_api = "http://101.201.39.160/designers";
-    $("#mode_homepage").ready(function(){
-    	$.get(modeflip_api, function(data, status){
-    		// HACK: striped position for designer list
-    		$.each(data, function(index){
-    			data[index].position = index % 2 == 0 ? 'thumb-left':'thumb-right';
-    		});
-
-    		var json_data = {designer : data}
-    		var template = $('#designerListTemplate').html();
-    		var html = Mustache.to_html(template, json_data);
-    		$('#mode_designers').html(html);
-	    });
-    })
+    // 		var json_data = {designer : data}
+    // 		var template = $('#designerListTemplate').html();
+    // 		var html = Mustache.to_html(template, json_data);
+    // 		$('#mode_designers').html(html);
+	   //  });
+    // })
 
 
 
